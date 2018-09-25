@@ -1,0 +1,10 @@
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+html, head {
+    text-align: center;
+    margin-top: calc(50vh - 100px);
+    background-color: #4052B6;
+    color: white;
+}
