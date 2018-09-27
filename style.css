@@ -3,7 +3,7 @@
 }
 
 body {
-    margin: 0px;
+    margin: 0;
 }
 
 body.landing {
@@ -24,7 +24,7 @@ a:hover {
 }
 
 a.secondary {
-    color: #6f84f7;
+    color: #97a7fc;
 }
 
 button {
@@ -53,4 +53,51 @@ button.secondary {
 button.secondary:hover {
     background-color: #6f84f7;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+}
+
+input {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+    background-color: white;
+    color: black;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+::placeholder {
+    text-align: left;
+    text-transform: uppercase;
+}
+
+input:focus {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+}
+
+input[type="email"] {
+    text-align: right;
+    width: 107px;
+    padding-right: 203px;
+}
+
+.suffixContainer {
+    position: relative;
+    width: 0;
+    height: 0;
+}
+
+.suffix {
+    position: absolute;
+    width: 300px;
+    font-size: 18px;
+    top: -2px;
+    left: -315px;
+    text-align: right;
+    color: #4052b6;
+    pointer-events: none;
+    white-space: nowrap;
+    overflow-x: hidden;
 }
