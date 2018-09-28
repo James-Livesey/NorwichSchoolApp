@@ -6,4 +6,6 @@ Possible categories:
 > Timetable
 > Homework
 > News
+> Tests of Life
 > Settings
+> Feedback
