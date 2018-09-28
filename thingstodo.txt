@@ -1,1 +1,9 @@
+Things to code in the Norwich School App:
 
+Possible categories:
+> Dashboard (Has a scrolling news feed like IMC News, homework, timetables, news, a RM unify link and more.)
+> Norwich School Maps
+> Timetable
+> Homework
+> News
+> Settings
