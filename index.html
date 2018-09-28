@@ -9,6 +9,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
         <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
         <script src="script.js"></script>
+        <script src="alerts.js"></script>
         <script>
             var OneSignal = window.OneSignal || [];
 
@@ -21,6 +22,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
     </head>
     <body class="landing">
+        <div onclick="closeMenu();" id="menuBackground"></div>
+        <div id="alert"></div>
         <h1>Norwich School App</h1>
         <h2>Coming soon...</h2>
         <p>
@@ -28,7 +31,7 @@
             with tasks such as navigating the campus, recording homework and
             being notified about live events.
         </p>
-        <button onclick="window.location.href='signin.html?go=beta';" class="secondary">Gain Beta Access</button><br>
+        <button onclick="window.location.href='signIn.html?go=beta';" class="secondary">Gain Beta Access</button><br>
         <small>(This is a little project of ours and it's not official. Norwich School is not sponsoring this in any way. Visit Norwich School at <a href="https://www.norwich-school.org.uk/" target="_blank" class="secondary">norwich-school.org.uk</a>.)</small><br>
         <small>By <a href="https://github.com/sebastiandoe5" target="_blank" class="secondary">@sebastiandoe5</a> and <a href="https://github.com/James-Livesey" target="_blank" class="secondary">@James-Livesey</a>.</small>
     </body>

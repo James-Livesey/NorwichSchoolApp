@@ -7,6 +7,17 @@ function validateEmail(email) {
     return re.test(String(email).toLowerCase());
 }
 
+function openMenu() {
+    $("#menu").css("left", "0");
+    $("#menuBackground").fadeIn(1000);
+}
+
+function closeMenu() {
+    $("#menu").css("left", "-75vw");
+    $("#menuBackground").fadeOut(1000);
+    closeAlert();
+}
+
 $(function() {
     $("input[type='email']").each(function() {
         $(this).next().children().css({
@@ -16,7 +27,7 @@ $(function() {
 
         var thisRef = this;
 
-        setTimeout(function() {$(thisRef).next().children().css("transition", "1s");}, 10);
+        setTimeout(function() {$(thisRef).next().children().css("transition", "1s");}, 100);
 
         $(this).focus(function() {
             $(this).next().children().css({

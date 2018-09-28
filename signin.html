@@ -5,6 +5,7 @@
         <link rel="shortcut icon" href="media/icon.png">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="signin.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
         <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
@@ -22,27 +23,63 @@
             firebase.initializeApp(config);
         </script>
         <script src="script.js"></script>
-        <script src="login.js"></script>
+        <script src="alerts.js"></script>
+        <script src="signIn.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
     </head>
-    <body class="login">
-        <div class="card login center">
-        <h1>Get beta access for Norwich School App</h1>
-        <h2>Be one of the first to try out our app!</h2>
-        <p>
-            Part of Norwich School? Become a beta tester before this app is
-            used as part of normal life. We're also looking forward to hear
-            your feedback!
-        </p>
-        <p>
-            Available for Android and the web. iOS coming soon!
-        </p>
-        <input type="email" placeholder="Email"><span class="suffixContainer"><span class="suffix">@norwich-school.org.uk</span></span></input><br>
-        <input placeholder="Name"></input><br>
-        <button onclick="alert('Coming soon!');">Gain Beta Access</button><br>
-        <small>(This is a little project of ours and it's not official. Norwich School is not sponsoring this in any way. Visit Norwich School at <a href="https://www.norwich-school.org.uk/" target="_blank">norwich-school.org.uk</a>.)</small><br>
-        <small>By <a href="https://github.com/sebastiandoe5" target="_blank">@sebastiandoe5</a> and <a href="https://github.com/James-Livesey" target="_blank">@James-Livesey</a>.</small><br>
-        <p><a href="index.html">Go back...</a></p>
+    <body class="signIn">
+        <div onclick="closeMenu();" id="menuBackground"></div>
+        <div id="alert"></div>
+        <div class="card signIn center">
+            <div id="beta">
+                <h1>Get beta access for Norwich School App</h1>
+                <h2>Be one of the first to try out our app!</h2>
+                <p>
+                    Part of Norwich School? Become a beta tester before this app is
+                    used as part of normal life. We're also looking forward to hear
+                    your feedback!
+                </p>
+                <p>
+                    Available for Android and the web. iOS coming soon!
+                </p>
+                <input type="email" placeholder="Email"><span class="suffixContainer"><span class="suffix">@norwich-school.org.uk</span></span></input><br>
+                <input placeholder="Name"></input><br>
+                <button onclick="alert('Coming soon!');">Gain Beta Access</button><br>
+                <small>
+                    A working Norwich School email address is required. You will be
+                    emailed by either Seb Doe or James Livesey. Reply time within
+                    around 2-3 days.
+                </small><br>
+                <small>
+                    To prevent email abuse, staff are required to email
+                    <a href="mailto:james@liveg.tech?Subject=NS%20Staff%20Beta%20Request">james@liveg.tech</a>
+                    using their work email adderss instead.
+                </small>
+            </div>
+            <div id="signIn">
+                <h1>Sign into Norwich School App</h1>
+                <p>
+                    Already have an account? You're in the right place!
+                </p>
+                <input type="email" placeholder="Email"><span class="suffixContainer"><span class="suffix">@norwich-school.org.uk</span></span></input><br>
+                <input type="password" placeholder="Password"></input><br>
+                <button onclick="alert('Coming soon!');">Sign In</button><br>
+            </div>
+            <div id="signUp">
+                <h1>Sign up for Norwich School App</h1>
+                <p>
+                    Ready to join? Fill in the information below!
+                </p>
+                <input placeholder="Full Name"></input><br>
+                <input type="email" placeholder="Email"><span class="suffixContainer"><span class="suffix">@norwich-school.org.uk</span></span></input><br>
+                <input type="password" placeholder="Password"></input><br>
+                <div class="checkboxContainer"><input type="checkbox">I accept the terms and conditions.</input></div><br>
+                <div class="checkboxContainer"><input type="checkbox">I accept the privacy policy.</input></div><br>
+                <button onclick="alert('Coming soon!');">Sign Up</button><br>
+            </div>
+        </div>
+        <div class="card flat signin">
+            <p><a href="index.html" class="white">GO HOME</a></p>
         </div>
     </body>
 </html>

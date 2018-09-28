@@ -1,0 +1,11 @@
+#beta {
+    display: none;
+}
+
+#signIn {
+    display: unset;
+}
+
+#signUp {
+    display: none;
+}
