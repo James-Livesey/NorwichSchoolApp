@@ -14,6 +14,11 @@ body.landing {
     color: white;
 }
 
+body.login {
+    margin: 10vh 10vw 8px 10vw;
+    background-color: #97a7fc;
+}
+
 a {
     text-decoration: none;
     color: #586fef;
@@ -85,6 +90,7 @@ input[type="email"] {
 
 .suffixContainer {
     position: relative;
+    left: -10px;
     width: 0;
     height: 0;
 }
@@ -94,7 +100,7 @@ input[type="email"] {
     width: 300px;
     font-size: 18px;
     top: -2px;
-    left: -315px;
+    left: -310px;
     text-align: right;
     color: #4052b6;
     pointer-events: none;
@@ -102,8 +108,33 @@ input[type="email"] {
     overflow-x: hidden;
 }
 
+.center {
+    text-align: center;
+}
+
+.card {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    background-color: white;
+}
+
 @media (max-height: 800px) {
     body.landing {
         margin-top: 10vh;
     }
+}
+
+@media (max-width: 600px) {
+    body.login {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 380px) {
+    body { 
+        zoom: 75%;
+    } 
 }

@@ -8,10 +8,25 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
         <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+        <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyChqOVPIShIgv3ENuW76TA-EoV9GKLzWR8",
+                authDomain: "norwichschoolapp.firebaseapp.com",
+                databaseURL: "https://norwichschoolapp.firebaseio.com",
+                projectId: "norwichschoolapp",
+                storageBucket: "",
+                messagingSenderId: "180046953742"
+            };
+            firebase.initializeApp(config);
+        </script>
         <script src="script.js"></script>
+        <script src="login.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
     </head>
-    <body class="landing">
+    <body class="login">
+        <div class="card center">
         <h1>Get beta access for Norwich School App</h1>
         <h2>Be one of the first to try out our app!</h2>
         <p>
@@ -24,9 +39,10 @@
         </p>
         <input type="email" placeholder="Email"><span class="suffixContainer"><span class="suffix">@norwich-school.org.uk</span></span></input><br>
         <input placeholder="Name"></input><br>
-        <button onclick="alert('Coming soon!');" class="secondary">Gain Beta Access</button><br>
-        <small>(This is a little project of ours and it's not official. Norwich School is not sponsoring this in any way. Visit Norwich School at <a href="https://www.norwich-school.org.uk/" target="_blank" class="secondary">norwich-school.org.uk</a>.)</small><br>
-        <small>By <a href="https://github.com/sebastiandoe5" target="_blank" class="secondary">@sebastiandoe5</a> and <a href="https://github.com/James-Livesey" target="_blank" class="secondary">@James-Livesey</a>.</small><br>
-        <p><a href="index.html" class="secondary">Go back...</a></p>
+        <button onclick="alert('Coming soon!');">Gain Beta Access</button><br>
+        <small>(This is a little project of ours and it's not official. Norwich School is not sponsoring this in any way. Visit Norwich School at <a href="https://www.norwich-school.org.uk/" target="_blank">norwich-school.org.uk</a>.)</small><br>
+        <small>By <a href="https://github.com/sebastiandoe5" target="_blank">@sebastiandoe5</a> and <a href="https://github.com/James-Livesey" target="_blank">@James-Livesey</a>.</small><br>
+        <p><a href="index.html">Go back...</a></p>
+        </div>
     </body>
 </html>
