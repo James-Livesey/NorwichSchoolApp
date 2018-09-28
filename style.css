@@ -7,15 +7,17 @@ body {
 }
 
 body.landing {
-    text-align: center;
     margin: 8px;
     margin-top: calc(50vh - 100px);
+    text-align: center;
     background-color: #4052b6;
     color: white;
 }
 
 body.login {
-    margin: 10vh 10vw 8px 10vw;
+    margin: 10vh calc(50vw - 300px) 8px calc(50vw - 300px);
+    padding: 0;
+    text-align: center;
     background-color: #97a7fc;
 }
 
@@ -120,16 +122,26 @@ input[type="email"] {
     background-color: white;
 }
 
+.card.login {
+    width: calc(600px - 20px);
+    margin: 0px;
+}
+
 @media (max-height: 800px) {
     body.landing {
         margin-top: 10vh;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 620px) {
     body.login {
         margin-left: 0px;
         margin-right: 0px;
+    }
+
+    .card.login {
+        width: unset;
+        margin: 10px;
     }
 }
 
