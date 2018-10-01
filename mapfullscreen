@@ -1,1 +1,19 @@
-<iframe src="https://www.google.com/maps/d/embed?mid=1rbIJSmmRKimyiBSm3ElGcTO0S7AUuYQ6"></iframe>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fullscreen Map | Norwich School App</title>
+        <link rel="shortcut icon" href="media/icon.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <link rel="manifest" href="/manifest.json">
+        <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+        <script src="script.js"></script>
+        <script src="alerts.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    </head>
+    <body class="mfs">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1rbIJSmmRKimyiBSm3ElGcTO0S7AUuYQ6" width="640" height="480"></iframe>
+    </body>
+</html>
