@@ -14,7 +14,7 @@ body.landing {
     color: white;
 }
 
-body.signIn {
+body.modal {
     margin: 10vh calc(50vw - 300px) 8px calc(50vw - 300px);
     padding: 0;
     text-align: center;
@@ -231,7 +231,7 @@ input[type="checkbox"]:hover {
 }
 
 @media (max-width: 620px) {
-    body.signIn {
+    body.modal {
         margin-left: 0px;
         margin-right: 0px;
     }

@@ -1,16 +1,34 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>What is a 404 error?</title>
+        <title>Page Not Found | Norwich School App</title>
         <link rel="shortcut icon" href="media/icon.png">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <link rel="manifest" href="/manifest.json">
+        <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+        <script src="script.js"></script>
+        <script src="alerts.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-        <link rel="stylesheet" href="whatis404.css">
     </head>
-    <body>
-        <br><br><br><h2>What is a 404 error?</h2><br><br>
-        <p>A 404 error occurs when you have entered the wrong web address into a URL, someone has given you the URL wrong or we have changed the URL since it was last given to you.
-            <br> We try to make old links redirects to the new ones, but this has not happened in this instance, probably meaning you have the wrong URL. You can <a href="https://norwichschoolapp.cf/">go home</a> to try to find the right new resource.</p><br>
-        <p>Error 404</p>
+    <body class="modal">
+        <div class="card">
+            <h2>What is a 404 error?</h2>
+            <p>
+                A 404 error occurs when you have entered the wrong web address
+                into a URL, someone has given you the URL wrong or we have
+                changed the URL since it was last given to you.
+            </p>
+            <p>
+                We try to make old links redirects to the new ones, but this
+                has not happened in this instance, probably meaning you have
+                the wrong URL. You can <a href="https://norwichschoolapp.cf/">go home</a>
+                to try to find the correct new resource.
+            </p>
+            <button onclick="window.location.href = '404.html';">Back</button><br>
+            <small>Error 404</small>
+        </div>
     </body>
 </html>
