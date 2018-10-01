@@ -9,7 +9,6 @@ Possible categories:
 * Tests of Life
 * Settings
 * Feedback
-* Email
 * Chat
 * Sport
 
