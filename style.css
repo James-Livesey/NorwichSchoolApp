@@ -27,6 +27,11 @@ body.fs {
     height: 100%;
 }
 
+body.marginnable {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
 a {
     text-decoration: none;
     color: #586fef;
@@ -198,6 +203,13 @@ input[type="checkbox"]:hover {
     margin: 5px;
 }
 
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #dfdfdf;
+}
+
 .card {
     margin: 10px;
     padding: 10px;
@@ -215,6 +227,14 @@ input[type="checkbox"]:hover {
 .card.signIn {
     width: calc(600px - 20px);
     margin: 0px;
+}
+
+.card.splittable {
+    width: calc(50% - 40px);
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .checkboxContainer {
@@ -242,10 +262,28 @@ input[type="checkbox"]:hover {
     }
 }
 
+@media (max-width: 900px) {
+    .cards {
+        display: block;
+        flex-direction: unset;
+        flex-wrap: unset;
+    }
+
+    .card.splittable {
+        width: auto;
+        display: block;
+    }
+}
+
 @media (max-width: 620px) {
     body.modal {
         margin-left: 0px;
         margin-right: 0px;
+    }
+
+    body.marginnable {
+        margin-left: 8px;
+        margin-right: 8px;
     }
 
     .card.signIn {
