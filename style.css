@@ -21,6 +21,12 @@ body.modal {
     background-color: #97a7fc;
 }
 
+body.fs {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
 a {
     text-decoration: none;
     color: #586fef;
@@ -217,6 +223,12 @@ input[type="checkbox"]:hover {
     text-align: left;
 }
 
+#map {
+    width: 100%;
+    height: calc(100vh - 4px);
+    border: none;
+}
+
 @media (max-height: 800px) {
     body.landing {
         margin-top: 10vh;
@@ -253,5 +265,9 @@ input[type="checkbox"]:hover {
 
     #alert {
         zoom: 133.3%
+    }
+
+    #map {
+        height: 133vh;
     }
 }
