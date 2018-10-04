@@ -2,20 +2,21 @@
 <html>
     <head>
         <title>Account | Norwich School App</title>
-        <link rel="shortcut icon" href="/media/icon.png">
+        <link rel="shortcut icon" href="../media/icon.png">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="../style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-        <link rel="manifest" href="/manifest.json">
+        <link rel="manifest" href="../manifest.json">
         <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
-        <script src="/script.js"></script>
-        <script src="/alerts.js"></script>
+        <script src="../script.js"></script>
+        <script src="../user.js"></script>
+        <script src="../alerts.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
     </head>
     <body class="landing">
-        <h2>Coming Soon</h2>
-        <p>Sorry, we have not finished making this resource yet.</p>
-        <small><a href="https://norwichschoolapp.cf/app/cards.html">Dashboard</a></small>
+        <h2>Hello, <span class="userFullName">user</span>!</h2>
+        <p>Review information about your account or sign out.</p>
+        <button onclick="user.signOut();" class="secondary">Sign Out</button>
     </body>
 </html>
